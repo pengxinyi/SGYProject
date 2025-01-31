@@ -1,0 +1,267 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<configuration>
+  <system.serviceModel>
+    <services>
+   
+
+         <service name="UFIDA.U9.LH.LHPubBP.OperationBP.DoOptBPStub">
+        <endpoint contract="UFIDA.U9.LH.LHPubBP.OperationBP.IDoOptBP"
+                  binding="basicHttpBinding" />
+      
+	</service>
+   
+
+         <service name="UFIDA.U9.LH.LHPubBP.AutoProgramBP.AutoCreateSOStub">
+        <endpoint contract="UFIDA.U9.LH.LHPubBP.AutoProgramBP.IAutoCreateSO"
+                  binding="basicHttpBinding" />
+      
+	</service>
+   
+
+         <service name="UFIDA.U9.LH.LHPubBP.AutoProgramBP.AutoCreateShipStub">
+        <endpoint contract="UFIDA.U9.LH.LHPubBP.AutoProgramBP.IAutoCreateShip"
+                  binding="basicHttpBinding" />
+      
+	</service>
+   
+
+         <service name="UFIDA.U9.LH.LHPubBP.AutoProgramBP.AutoCreateRtnRcvStub">
+        <endpoint contract="UFIDA.U9.LH.LHPubBP.AutoProgramBP.IAutoCreateRtnRcv"
+                  binding="basicHttpBinding" />
+      
+	</service>
+   
+
+         <service name="UFIDA.U9.LH.LHPubBP.AutoProgramBP.AutoCreateOCRcvStub">
+        <endpoint contract="UFIDA.U9.LH.LHPubBP.AutoProgramBP.IAutoCreateOCRcv"
+                  binding="basicHttpBinding" />
+      
+	</service>
+   
+
+         <service name="UFIDA.U9.LH.LHPubBP.AutoProgramBP.AutoCreateOCRtnRcvStub">
+        <endpoint contract="UFIDA.U9.LH.LHPubBP.AutoProgramBP.IAutoCreateOCRtnRcv"
+                  binding="basicHttpBinding" />
+      
+	</service>
+   
+
+         <service name="UFIDA.U9.LH.LHPubBP.AutoProgramBP.AutoSendFailRecordStub">
+        <endpoint contract="UFIDA.U9.LH.LHPubBP.AutoProgramBP.IAutoSendFailRecord"
+                  binding="basicHttpBinding" />
+      
+	</service>
+   
+
+         <service name="UFIDA.U9.LH.LHPubBP.AutoProgramBP.AutoCreateRMAStub">
+        <endpoint contract="UFIDA.U9.LH.LHPubBP.AutoProgramBP.IAutoCreateRMA"
+                  binding="basicHttpBinding" />
+      
+	</service>
+   
+
+         <service name="UFIDA.U9.LH.LHPubBP.AutoProgramBP.AutoUpdateRcvStub">
+        <endpoint contract="UFIDA.U9.LH.LHPubBP.AutoProgramBP.IAutoUpdateRcv"
+                  binding="basicHttpBinding" />
+      
+	</service>
+   
+
+         <service name="UFIDA.U9.LH.LHPubBP.AutoProgramBP.AutoUpdateOCRcvStub">
+        <endpoint contract="UFIDA.U9.LH.LHPubBP.AutoProgramBP.IAutoUpdateOCRcv"
+                  binding="basicHttpBinding" />
+      
+	</service>
+   
+
+         <service name="UFIDA.U9.LH.LHPubBP.AutoProgramBP.AutoUpdateMiscShipStub">
+        <endpoint contract="UFIDA.U9.LH.LHPubBP.AutoProgramBP.IAutoUpdateMiscShip"
+                  binding="basicHttpBinding" />
+      
+	</service>
+   
+
+         <service name="UFIDA.U9.LH.LHPubBP.AutoProgramBP.AutoUpdateMiscRcvStub">
+        <endpoint contract="UFIDA.U9.LH.LHPubBP.AutoProgramBP.IAutoUpdateMiscRcv"
+                  binding="basicHttpBinding" />
+      
+	</service>
+   
+
+         <service name="UFIDA.U9.LH.LHPubBP.AutoProgramBP.AutoSendBaseStub">
+        <endpoint contract="UFIDA.U9.LH.LHPubBP.AutoProgramBP.IAutoSendBase"
+                  binding="basicHttpBinding" />
+      
+	</service>
+   
+
+         <service name="UFIDA.U9.LH.LHPubBP.AutoProgramBP.AutoUpdateTransferInStub">
+        <endpoint contract="UFIDA.U9.LH.LHPubBP.AutoProgramBP.IAutoUpdateTransferIn"
+                  binding="basicHttpBinding" />
+      
+	</service>
+   
+
+         <service name="UFIDA.U9.LH.LHPubBP.AutoProgramBP.AutoCreateMiscShipRcvStub">
+        <endpoint contract="UFIDA.U9.LH.LHPubBP.AutoProgramBP.IAutoCreateMiscShipRcv"
+                  binding="basicHttpBinding" />
+      
+	</service>
+   
+
+         <service name="UFIDA.U9.LH.LHPubBP.AutoProgramBP.AutoCreateU9DocStub">
+        <endpoint contract="UFIDA.U9.LH.LHPubBP.AutoProgramBP.IAutoCreateU9Doc"
+                  binding="basicHttpBinding" />
+      
+	</service>
+   
+
+         <service name="UFIDA.U9.LH.LHPubBP.AutoProgramBP.AutoCreateU9SODocStub">
+        <endpoint contract="UFIDA.U9.LH.LHPubBP.AutoProgramBP.IAutoCreateU9SODoc"
+                  binding="basicHttpBinding" />
+      
+	</service>
+   
+
+         <service name="UFIDA.U9.LH.LHPubBP.AutoProgramBP.AutoCreateU9ReceivementDocStub">
+        <endpoint contract="UFIDA.U9.LH.LHPubBP.AutoProgramBP.IAutoCreateU9ReceivementDoc"
+                  binding="basicHttpBinding" />
+      
+	</service>
+   
+
+         <service name="UFIDA.U9.LH.LHPubBP.AutoProgramBP.AutoCreateU9PurRcvDocStub">
+        <endpoint contract="UFIDA.U9.LH.LHPubBP.AutoProgramBP.IAutoCreateU9PurRcvDoc"
+                  binding="basicHttpBinding" />
+      
+	</service>
+   
+
+         <service name="UFIDA.U9.LH.LHPubBP.AutoProgramBP.AutoCreateU9NoSrcShipDocStub">
+        <endpoint contract="UFIDA.U9.LH.LHPubBP.AutoProgramBP.IAutoCreateU9NoSrcShipDoc"
+                  binding="basicHttpBinding" />
+      
+	</service>
+   
+
+         <service name="UFIDA.U9.LH.LHPubBP.AutoProgramBP.AutoCreateU9SrcShipDocStub">
+        <endpoint contract="UFIDA.U9.LH.LHPubBP.AutoProgramBP.IAutoCreateU9SrcShipDoc"
+                  binding="basicHttpBinding" />
+      
+	</service>
+   
+
+         <service name="UFIDA.U9.LH.LHPubBP.AutoProgramBP.AutoCreateU9RMADocStub">
+        <endpoint contract="UFIDA.U9.LH.LHPubBP.AutoProgramBP.IAutoCreateU9RMADoc"
+                  binding="basicHttpBinding" />
+      
+	</service>
+   
+
+         <service name="UFIDA.U9.LH.LHPubBP.AutoProgramBP.AutoCreateU9MiscRcvTransDocStub">
+        <endpoint contract="UFIDA.U9.LH.LHPubBP.AutoProgramBP.IAutoCreateU9MiscRcvTransDoc"
+                  binding="basicHttpBinding" />
+      
+	</service>
+   
+
+         <service name="UFIDA.U9.LH.LHPubBP.AutoProgramBP.AutoCreateU9MiscShipDocStub">
+        <endpoint contract="UFIDA.U9.LH.LHPubBP.AutoProgramBP.IAutoCreateU9MiscShipDoc"
+                  binding="basicHttpBinding" />
+      
+	</service>
+   
+
+         <service name="UFIDA.U9.LH.LHPubBP.AutoProgramBP.AutoUpdateU9MiscShipDocStub">
+        <endpoint contract="UFIDA.U9.LH.LHPubBP.AutoProgramBP.IAutoUpdateU9MiscShipDoc"
+                  binding="basicHttpBinding" />
+      
+	</service>
+   
+
+         <service name="UFIDA.U9.LH.LHPubBP.AutoProgramBP.AutoUpdateU9MiscRcvTransDocStub">
+        <endpoint contract="UFIDA.U9.LH.LHPubBP.AutoProgramBP.IAutoUpdateU9MiscRcvTransDoc"
+                  binding="basicHttpBinding" />
+      
+	</service>
+   
+
+         <service name="UFIDA.U9.LH.LHPubBP.AutoProgramBP.AutoUpdateU9PurRtnRCVDocStub">
+        <endpoint contract="UFIDA.U9.LH.LHPubBP.AutoProgramBP.IAutoUpdateU9PurRtnRCVDoc"
+                  binding="basicHttpBinding" />
+      
+	</service>
+   
+
+         <service name="UFIDA.U9.LH.LHPubBP.AutoProgramBP.AutoUpdateU9TransferInDocStub">
+        <endpoint contract="UFIDA.U9.LH.LHPubBP.AutoProgramBP.IAutoUpdateU9TransferInDoc"
+                  binding="basicHttpBinding" />
+      
+	</service>
+   
+
+         <service name="UFIDA.U9.LH.LHPubBP.AutoProgramBP.AutoCreateOuterRcvShipDocStub">
+        <endpoint contract="UFIDA.U9.LH.LHPubBP.AutoProgramBP.IAutoCreateOuterRcvShipDoc"
+                  binding="basicHttpBinding" />
+      
+	</service>
+   
+
+         <service name="UFIDA.U9.LH.LHPubBP.AutoProgramBP.AutoCreateShiftDocStub">
+        <endpoint contract="UFIDA.U9.LH.LHPubBP.AutoProgramBP.IAutoCreateShiftDoc"
+                  binding="basicHttpBinding" />
+      
+	</service>
+   
+
+         <service name="UFIDA.U9.LH.LHPubBP.AutoProgramBP.AutoCreateU9ShiftDocStub">
+        <endpoint contract="UFIDA.U9.LH.LHPubBP.AutoProgramBP.IAutoCreateU9ShiftDoc"
+                  binding="basicHttpBinding" />
+      
+	</service>
+   
+
+         <service name="UFIDA.U9.LH.LHPubBP.AutoProgramBP.AutoUpdateSaleReturnDocStub">
+        <endpoint contract="UFIDA.U9.LH.LHPubBP.AutoProgramBP.IAutoUpdateSaleReturnDoc"
+                  binding="basicHttpBinding" />
+      
+	</service>
+   
+
+         <service name="UFIDA.U9.LH.LHPubBP.AutoProgramBP.AutoUpdateU9SaleReturnDocStub">
+        <endpoint contract="UFIDA.U9.LH.LHPubBP.AutoProgramBP.IAutoUpdateU9SaleReturnDoc"
+                  binding="basicHttpBinding" />
+      
+	</service>
+   
+
+         <service name="UFIDA.U9.LH.LHPubBP.AutoProgramBP.AutoUpdateSOReturnDocStub">
+        <endpoint contract="UFIDA.U9.LH.LHPubBP.AutoProgramBP.IAutoUpdateSOReturnDoc"
+                  binding="basicHttpBinding" />
+      
+	</service>
+   
+
+         <service name="UFIDA.U9.LH.LHPubBP.AutoProgramBP.AutoUpdateU9SOReturnDocStub">
+        <endpoint contract="UFIDA.U9.LH.LHPubBP.AutoProgramBP.IAutoUpdateU9SOReturnDoc"
+                  binding="basicHttpBinding" />
+      
+	</service>
+   
+
+         <service name="UFIDA.U9.LH.LHPubBP.AutoProgramBP.AutoCreateARDocStub">
+        <endpoint contract="UFIDA.U9.LH.LHPubBP.AutoProgramBP.IAutoCreateARDoc"
+                  binding="basicHttpBinding" />
+      
+	</service>
+   
+
+         <service name="UFIDA.U9.LH.LHPubBP.AutoProgramBP.AutoCreateU9ARDocStub">
+        <endpoint contract="UFIDA.U9.LH.LHPubBP.AutoProgramBP.IAutoCreateU9ARDoc"
+                  binding="basicHttpBinding" />
+      
+	</service>
+ 
+    </services>
+</system.serviceModel>
+</configuration>

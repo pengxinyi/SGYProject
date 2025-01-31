@@ -1,0 +1,98 @@
+﻿namespace UFIDA.U9.LH.LHPubBP.AutoProgramBP
+{
+    using Newtonsoft.Json;
+    using System;
+	using System.Collections.Generic;
+    using System.Data;
+    using System.IO;
+    using System.Text;
+    using System.Web.Script.Serialization;
+    using UFIDA.U9.LH.LHPubBP.Model;
+    using UFIDA.U9.SM.SO;
+    using UFSoft.UBF.AopFrame;	
+	using UFSoft.UBF.Util.Context;
+    using UFSoft.UBF.Util.DataAccess;
+
+    /// <summary>
+    /// 定时任务从failinfo表获取数据，创建U9单据
+    /// </summary>	
+	public partial class AutoCreateU9Doc 
+	{	
+		internal BaseStrategy Select()
+		{
+			return new AutoCreateU9DocImpementStrategy();	
+		}		
+	}
+	
+	#region  implement strategy	
+	/// <summary>
+	/// Impement Implement
+	/// 
+	/// </summary>	
+	internal partial class AutoCreateU9DocImpementStrategy : BaseStrategy
+	{
+		public AutoCreateU9DocImpementStrategy() { }
+
+		public override object Do(object obj)
+		{						
+			AutoCreateU9Doc bpObj = (AutoCreateU9Doc)obj;
+            string dataJson = string.Empty;
+            string posturl = string.Empty;
+            try
+            {
+                string sql = string.Empty;
+                DataSet ds = new DataSet();
+                sql = string.Format("Select top 100  ID,DocType,Json,Org  from Cust_FailInfo where issuccess=0 and  DocType='销售订单创建' order by CreatedOn desc");
+                DataAccessor.RunSQL(DataAccessor.GetConn(), sql, null, out ds);
+                if ((ds != null) && (ds.Tables.Count > 0) && (ds.Tables.Count >= 1 && ds.Tables[0].Rows.Count > 0))
+                {                
+                    string apirEEEeuslt = string.Empty;
+                    foreach (DataRow row in ds.Tables[0].Rows)
+                    {
+                        dataJson = row["Json"].ToString();
+                        SOReq req = JsonConvert.DeserializeObject<SOReq>(dataJson);
+                        if (req.SODt!=null)
+                        {
+                            SO so = SO.Finder.Find("DocNo=@DocNo and Org=@Org", new UFSoft.UBF.PL.OqlParam("DocNo", req.SODt.DocNo), new UFSoft.UBF.PL.OqlParam("Org", Convert.ToInt64(row["Org"])));
+                            if (so!=null)
+                            {
+                                sql = string.Format(@"update Cust_FailInfo set  issuccess=1  where ID={0}", Convert.ToInt64(row["ID"]));
+                                DataAccessor.RunSQL(DataAccessor.GetConn(), sql, null);
+                                continue;
+                            }
+                        }
+                        //posturl = CHelper.GetDefineValueUrl("CustParam", "01");
+                        posturl = File.ReadAllText("C:\\\\Windows\\U9Interface.txt", Encoding.UTF8);
+                        apirEEEeuslt = UFIDA.U9.LH.LHPubBP.Tools.HttpPost(posturl, dataJson);
+                        JavaScriptSerializer serializer = new JavaScriptSerializer();
+                        RtnDataJson rtns = serializer.Deserialize<RtnDataJson>(apirEEEeuslt);
+                        if (rtns.IsSuccess)
+                        {
+                            sql = string.Format(@"update Cust_FailInfo set  issuccess=1  where ID={0}", Convert.ToInt64(row["ID"]));
+                            DataAccessor.RunSQL(DataAccessor.GetConn(), sql, null);
+                        }
+                        else
+                        {
+                            rtns.Msg = rtns.Msg.Length > 100 ? rtns.Msg.Substring(0, 100) : rtns.Msg;
+                            sql = string.Format(@"update Cust_FailInfo set  issuccess=2,Reason='{1}'  where ID={0}", Convert.ToInt64(row["ID"]), rtns.Msg);
+                            DataAccessor.RunSQL(DataAccessor.GetConn(), sql, null);
+                        }
+                    }
+
+                }
+
+
+            }
+            catch (Exception ex)
+            {
+                CHelper.InsertU9Log(false, "销售订单创建", ex.Message, dataJson, posturl);
+                throw new Exception(ex.Message);
+            }
+            return "OK";
+        }		
+	}
+
+	#endregion
+	
+	
+}

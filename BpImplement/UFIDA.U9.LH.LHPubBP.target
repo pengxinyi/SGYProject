@@ -1,0 +1,473 @@
+﻿<Project DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003" ToolsVersion="4.0">
+  <ItemGroup>
+	<Compile Include="UBFAssebmlyInfo.cs" > 
+	    <Inproject>true</Inproject>
+	</Compile>	
+    <None Include="UFIDA.U9.LH.LHPubBP.ubfsvc">
+      <Inproject>true</Inproject>
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+
+  </ItemGroup>
+  <ItemGroup>
+  
+	<Compile Include="OperationBP\DoOptBP.cs" > 
+	    <Inproject>true</Inproject>
+	</Compile>
+	<Compile Include="OperationBP\DoOptBPExtend.cs" > 
+	    <Inproject>true</Inproject>
+	</Compile>
+    <Compile Include="OperationBP\DoOptBPStub.cs" >
+	    <Inproject>false</Inproject>
+    </Compile>
+      
+	<Compile Include="AutoProgramBP\AutoCreateSO.cs" > 
+	    <Inproject>true</Inproject>
+	</Compile>
+	<Compile Include="AutoProgramBP\AutoCreateSOExtend.cs" > 
+	    <Inproject>true</Inproject>
+	</Compile>
+    <Compile Include="AutoProgramBP\AutoCreateSOStub.cs" >
+	    <Inproject>false</Inproject>
+    </Compile>
+      
+	<Compile Include="AutoProgramBP\AutoCreateShip.cs" > 
+	    <Inproject>true</Inproject>
+	</Compile>
+	<Compile Include="AutoProgramBP\AutoCreateShipExtend.cs" > 
+	    <Inproject>true</Inproject>
+	</Compile>
+    <Compile Include="AutoProgramBP\AutoCreateShipStub.cs" >
+	    <Inproject>false</Inproject>
+    </Compile>
+      
+	<Compile Include="AutoProgramBP\AutoCreateRtnRcv.cs" > 
+	    <Inproject>true</Inproject>
+	</Compile>
+	<Compile Include="AutoProgramBP\AutoCreateRtnRcvExtend.cs" > 
+	    <Inproject>true</Inproject>
+	</Compile>
+    <Compile Include="AutoProgramBP\AutoCreateRtnRcvStub.cs" >
+	    <Inproject>false</Inproject>
+    </Compile>
+      
+	<Compile Include="AutoProgramBP\AutoCreateOCRcv.cs" > 
+	    <Inproject>true</Inproject>
+	</Compile>
+	<Compile Include="AutoProgramBP\AutoCreateOCRcvExtend.cs" > 
+	    <Inproject>true</Inproject>
+	</Compile>
+    <Compile Include="AutoProgramBP\AutoCreateOCRcvStub.cs" >
+	    <Inproject>false</Inproject>
+    </Compile>
+      
+	<Compile Include="AutoProgramBP\AutoCreateOCRtnRcv.cs" > 
+	    <Inproject>true</Inproject>
+	</Compile>
+	<Compile Include="AutoProgramBP\AutoCreateOCRtnRcvExtend.cs" > 
+	    <Inproject>true</Inproject>
+	</Compile>
+    <Compile Include="AutoProgramBP\AutoCreateOCRtnRcvStub.cs" >
+	    <Inproject>false</Inproject>
+    </Compile>
+      
+	<Compile Include="AutoProgramBP\AutoSendFailRecord.cs" > 
+	    <Inproject>true</Inproject>
+	</Compile>
+	<Compile Include="AutoProgramBP\AutoSendFailRecordExtend.cs" > 
+	    <Inproject>true</Inproject>
+	</Compile>
+    <Compile Include="AutoProgramBP\AutoSendFailRecordStub.cs" >
+	    <Inproject>false</Inproject>
+    </Compile>
+      
+	<Compile Include="AutoProgramBP\AutoCreateRMA.cs" > 
+	    <Inproject>true</Inproject>
+	</Compile>
+	<Compile Include="AutoProgramBP\AutoCreateRMAExtend.cs" > 
+	    <Inproject>true</Inproject>
+	</Compile>
+    <Compile Include="AutoProgramBP\AutoCreateRMAStub.cs" >
+	    <Inproject>false</Inproject>
+    </Compile>
+      
+	<Compile Include="AutoProgramBP\AutoUpdateRcv.cs" > 
+	    <Inproject>true</Inproject>
+	</Compile>
+	<Compile Include="AutoProgramBP\AutoUpdateRcvExtend.cs" > 
+	    <Inproject>true</Inproject>
+	</Compile>
+    <Compile Include="AutoProgramBP\AutoUpdateRcvStub.cs" >
+	    <Inproject>false</Inproject>
+    </Compile>
+      
+	<Compile Include="AutoProgramBP\AutoUpdateOCRcv.cs" > 
+	    <Inproject>true</Inproject>
+	</Compile>
+	<Compile Include="AutoProgramBP\AutoUpdateOCRcvExtend.cs" > 
+	    <Inproject>true</Inproject>
+	</Compile>
+    <Compile Include="AutoProgramBP\AutoUpdateOCRcvStub.cs" >
+	    <Inproject>false</Inproject>
+    </Compile>
+      
+	<Compile Include="AutoProgramBP\AutoUpdateMiscShip.cs" > 
+	    <Inproject>true</Inproject>
+	</Compile>
+	<Compile Include="AutoProgramBP\AutoUpdateMiscShipExtend.cs" > 
+	    <Inproject>true</Inproject>
+	</Compile>
+    <Compile Include="AutoProgramBP\AutoUpdateMiscShipStub.cs" >
+	    <Inproject>false</Inproject>
+    </Compile>
+      
+	<Compile Include="AutoProgramBP\AutoUpdateMiscRcv.cs" > 
+	    <Inproject>true</Inproject>
+	</Compile>
+	<Compile Include="AutoProgramBP\AutoUpdateMiscRcvExtend.cs" > 
+	    <Inproject>true</Inproject>
+	</Compile>
+    <Compile Include="AutoProgramBP\AutoUpdateMiscRcvStub.cs" >
+	    <Inproject>false</Inproject>
+    </Compile>
+      
+	<Compile Include="AutoProgramBP\AutoSendBase.cs" > 
+	    <Inproject>true</Inproject>
+	</Compile>
+	<Compile Include="AutoProgramBP\AutoSendBaseExtend.cs" > 
+	    <Inproject>true</Inproject>
+	</Compile>
+    <Compile Include="AutoProgramBP\AutoSendBaseStub.cs" >
+	    <Inproject>false</Inproject>
+    </Compile>
+      
+	<Compile Include="AutoProgramBP\AutoUpdateTransferIn.cs" > 
+	    <Inproject>true</Inproject>
+	</Compile>
+	<Compile Include="AutoProgramBP\AutoUpdateTransferInExtend.cs" > 
+	    <Inproject>true</Inproject>
+	</Compile>
+    <Compile Include="AutoProgramBP\AutoUpdateTransferInStub.cs" >
+	    <Inproject>false</Inproject>
+    </Compile>
+      
+	<Compile Include="AutoProgramBP\AutoCreateMiscShipRcv.cs" > 
+	    <Inproject>true</Inproject>
+	</Compile>
+	<Compile Include="AutoProgramBP\AutoCreateMiscShipRcvExtend.cs" > 
+	    <Inproject>true</Inproject>
+	</Compile>
+    <Compile Include="AutoProgramBP\AutoCreateMiscShipRcvStub.cs" >
+	    <Inproject>false</Inproject>
+    </Compile>
+      
+	<Compile Include="AutoProgramBP\AutoCreateU9Doc.cs" > 
+	    <Inproject>true</Inproject>
+	</Compile>
+	<Compile Include="AutoProgramBP\AutoCreateU9DocExtend.cs" > 
+	    <Inproject>true</Inproject>
+	</Compile>
+    <Compile Include="AutoProgramBP\AutoCreateU9DocStub.cs" >
+	    <Inproject>false</Inproject>
+    </Compile>
+      
+	<Compile Include="AutoProgramBP\AutoCreateU9SODoc.cs" > 
+	    <Inproject>true</Inproject>
+	</Compile>
+	<Compile Include="AutoProgramBP\AutoCreateU9SODocExtend.cs" > 
+	    <Inproject>true</Inproject>
+	</Compile>
+    <Compile Include="AutoProgramBP\AutoCreateU9SODocStub.cs" >
+	    <Inproject>false</Inproject>
+    </Compile>
+      
+	<Compile Include="AutoProgramBP\AutoCreateU9ReceivementDoc.cs" > 
+	    <Inproject>true</Inproject>
+	</Compile>
+	<Compile Include="AutoProgramBP\AutoCreateU9ReceivementDocExtend.cs" > 
+	    <Inproject>true</Inproject>
+	</Compile>
+    <Compile Include="AutoProgramBP\AutoCreateU9ReceivementDocStub.cs" >
+	    <Inproject>false</Inproject>
+    </Compile>
+      
+	<Compile Include="AutoProgramBP\AutoCreateU9PurRcvDoc.cs" > 
+	    <Inproject>true</Inproject>
+	</Compile>
+	<Compile Include="AutoProgramBP\AutoCreateU9PurRcvDocExtend.cs" > 
+	    <Inproject>true</Inproject>
+	</Compile>
+    <Compile Include="AutoProgramBP\AutoCreateU9PurRcvDocStub.cs" >
+	    <Inproject>false</Inproject>
+    </Compile>
+      
+	<Compile Include="AutoProgramBP\AutoCreateU9NoSrcShipDoc.cs" > 
+	    <Inproject>true</Inproject>
+	</Compile>
+	<Compile Include="AutoProgramBP\AutoCreateU9NoSrcShipDocExtend.cs" > 
+	    <Inproject>true</Inproject>
+	</Compile>
+    <Compile Include="AutoProgramBP\AutoCreateU9NoSrcShipDocStub.cs" >
+	    <Inproject>false</Inproject>
+    </Compile>
+      
+	<Compile Include="AutoProgramBP\AutoCreateU9SrcShipDoc.cs" > 
+	    <Inproject>true</Inproject>
+	</Compile>
+	<Compile Include="AutoProgramBP\AutoCreateU9SrcShipDocExtend.cs" > 
+	    <Inproject>true</Inproject>
+	</Compile>
+    <Compile Include="AutoProgramBP\AutoCreateU9SrcShipDocStub.cs" >
+	    <Inproject>false</Inproject>
+    </Compile>
+      
+	<Compile Include="AutoProgramBP\AutoCreateU9RMADoc.cs" > 
+	    <Inproject>true</Inproject>
+	</Compile>
+	<Compile Include="AutoProgramBP\AutoCreateU9RMADocExtend.cs" > 
+	    <Inproject>true</Inproject>
+	</Compile>
+    <Compile Include="AutoProgramBP\AutoCreateU9RMADocStub.cs" >
+	    <Inproject>false</Inproject>
+    </Compile>
+      
+	<Compile Include="AutoProgramBP\AutoCreateU9MiscRcvTransDoc.cs" > 
+	    <Inproject>true</Inproject>
+	</Compile>
+	<Compile Include="AutoProgramBP\AutoCreateU9MiscRcvTransDocExtend.cs" > 
+	    <Inproject>true</Inproject>
+	</Compile>
+    <Compile Include="AutoProgramBP\AutoCreateU9MiscRcvTransDocStub.cs" >
+	    <Inproject>false</Inproject>
+    </Compile>
+      
+	<Compile Include="AutoProgramBP\AutoCreateU9MiscShipDoc.cs" > 
+	    <Inproject>true</Inproject>
+	</Compile>
+	<Compile Include="AutoProgramBP\AutoCreateU9MiscShipDocExtend.cs" > 
+	    <Inproject>true</Inproject>
+	</Compile>
+    <Compile Include="AutoProgramBP\AutoCreateU9MiscShipDocStub.cs" >
+	    <Inproject>false</Inproject>
+    </Compile>
+      
+	<Compile Include="AutoProgramBP\AutoUpdateU9MiscShipDoc.cs" > 
+	    <Inproject>true</Inproject>
+	</Compile>
+	<Compile Include="AutoProgramBP\AutoUpdateU9MiscShipDocExtend.cs" > 
+	    <Inproject>true</Inproject>
+	</Compile>
+    <Compile Include="AutoProgramBP\AutoUpdateU9MiscShipDocStub.cs" >
+	    <Inproject>false</Inproject>
+    </Compile>
+      
+	<Compile Include="AutoProgramBP\AutoUpdateU9MiscRcvTransDoc.cs" > 
+	    <Inproject>true</Inproject>
+	</Compile>
+	<Compile Include="AutoProgramBP\AutoUpdateU9MiscRcvTransDocExtend.cs" > 
+	    <Inproject>true</Inproject>
+	</Compile>
+    <Compile Include="AutoProgramBP\AutoUpdateU9MiscRcvTransDocStub.cs" >
+	    <Inproject>false</Inproject>
+    </Compile>
+      
+	<Compile Include="AutoProgramBP\AutoUpdateU9PurRtnRCVDoc.cs" > 
+	    <Inproject>true</Inproject>
+	</Compile>
+	<Compile Include="AutoProgramBP\AutoUpdateU9PurRtnRCVDocExtend.cs" > 
+	    <Inproject>true</Inproject>
+	</Compile>
+    <Compile Include="AutoProgramBP\AutoUpdateU9PurRtnRCVDocStub.cs" >
+	    <Inproject>false</Inproject>
+    </Compile>
+      
+	<Compile Include="AutoProgramBP\AutoUpdateU9TransferInDoc.cs" > 
+	    <Inproject>true</Inproject>
+	</Compile>
+	<Compile Include="AutoProgramBP\AutoUpdateU9TransferInDocExtend.cs" > 
+	    <Inproject>true</Inproject>
+	</Compile>
+    <Compile Include="AutoProgramBP\AutoUpdateU9TransferInDocStub.cs" >
+	    <Inproject>false</Inproject>
+    </Compile>
+      
+	<Compile Include="AutoProgramBP\AutoCreateOuterRcvShipDoc.cs" > 
+	    <Inproject>true</Inproject>
+	</Compile>
+	<Compile Include="AutoProgramBP\AutoCreateOuterRcvShipDocExtend.cs" > 
+	    <Inproject>true</Inproject>
+	</Compile>
+    <Compile Include="AutoProgramBP\AutoCreateOuterRcvShipDocStub.cs" >
+	    <Inproject>false</Inproject>
+    </Compile>
+      
+	<Compile Include="AutoProgramBP\AutoCreateShiftDoc.cs" > 
+	    <Inproject>true</Inproject>
+	</Compile>
+	<Compile Include="AutoProgramBP\AutoCreateShiftDocExtend.cs" > 
+	    <Inproject>true</Inproject>
+	</Compile>
+    <Compile Include="AutoProgramBP\AutoCreateShiftDocStub.cs" >
+	    <Inproject>false</Inproject>
+    </Compile>
+      
+	<Compile Include="AutoProgramBP\AutoCreateU9ShiftDoc.cs" > 
+	    <Inproject>true</Inproject>
+	</Compile>
+	<Compile Include="AutoProgramBP\AutoCreateU9ShiftDocExtend.cs" > 
+	    <Inproject>true</Inproject>
+	</Compile>
+    <Compile Include="AutoProgramBP\AutoCreateU9ShiftDocStub.cs" >
+	    <Inproject>false</Inproject>
+    </Compile>
+      
+	<Compile Include="AutoProgramBP\AutoUpdateSaleReturnDoc.cs" > 
+	    <Inproject>true</Inproject>
+	</Compile>
+	<Compile Include="AutoProgramBP\AutoUpdateSaleReturnDocExtend.cs" > 
+	    <Inproject>true</Inproject>
+	</Compile>
+    <Compile Include="AutoProgramBP\AutoUpdateSaleReturnDocStub.cs" >
+	    <Inproject>false</Inproject>
+    </Compile>
+      
+	<Compile Include="AutoProgramBP\AutoUpdateU9SaleReturnDoc.cs" > 
+	    <Inproject>true</Inproject>
+	</Compile>
+	<Compile Include="AutoProgramBP\AutoUpdateU9SaleReturnDocExtend.cs" > 
+	    <Inproject>true</Inproject>
+	</Compile>
+    <Compile Include="AutoProgramBP\AutoUpdateU9SaleReturnDocStub.cs" >
+	    <Inproject>false</Inproject>
+    </Compile>
+      
+	<Compile Include="AutoProgramBP\AutoUpdateSOReturnDoc.cs" > 
+	    <Inproject>true</Inproject>
+	</Compile>
+	<Compile Include="AutoProgramBP\AutoUpdateSOReturnDocExtend.cs" > 
+	    <Inproject>true</Inproject>
+	</Compile>
+    <Compile Include="AutoProgramBP\AutoUpdateSOReturnDocStub.cs" >
+	    <Inproject>false</Inproject>
+    </Compile>
+      
+	<Compile Include="AutoProgramBP\AutoUpdateU9SOReturnDoc.cs" > 
+	    <Inproject>true</Inproject>
+	</Compile>
+	<Compile Include="AutoProgramBP\AutoUpdateU9SOReturnDocExtend.cs" > 
+	    <Inproject>true</Inproject>
+	</Compile>
+    <Compile Include="AutoProgramBP\AutoUpdateU9SOReturnDocStub.cs" >
+	    <Inproject>false</Inproject>
+    </Compile>
+      
+	<Compile Include="AutoProgramBP\AutoCreateARDoc.cs" > 
+	    <Inproject>true</Inproject>
+	</Compile>
+	<Compile Include="AutoProgramBP\AutoCreateARDocExtend.cs" > 
+	    <Inproject>true</Inproject>
+	</Compile>
+    <Compile Include="AutoProgramBP\AutoCreateARDocStub.cs" >
+	    <Inproject>false</Inproject>
+    </Compile>
+      
+	<Compile Include="AutoProgramBP\AutoCreateU9ARDoc.cs" > 
+	    <Inproject>true</Inproject>
+	</Compile>
+	<Compile Include="AutoProgramBP\AutoCreateU9ARDocExtend.cs" > 
+	    <Inproject>true</Inproject>
+	</Compile>
+    <Compile Include="AutoProgramBP\AutoCreateU9ARDocStub.cs" >
+	    <Inproject>false</Inproject>
+    </Compile>
+    
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\Deploy\UFIDA.U9.LH.LHPubBP.Deploy.csproj">
+      <Project>{75F2BB61-0FFD-402F-B2F9-5CAF0F818FAA}</Project>
+      <Package>{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}</Package>
+      <Name>UFIDA.U9.LH.LHPubBP.Deploy</Name>
+    </ProjectReference>
+
+    <Reference Include="System" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Xml" />
+    <Reference Include="System.ServiceModel" />
+    <Reference Include="UBF.System, Version=1.0.0.1, Culture=neutral, PublicKeyToken=aed5b8b71060d80b, processorArchitecture=MSIL">
+        <HintPath>.\..\..\..\..\yonyou\UBFCE\U9.VOB.Product.UBF\UBFStudio\Runtime\\UBF.System.dll</HintPath>
+        <SpecificVersion>False</SpecificVersion>
+        <Private>False</Private>
+   </Reference>
+    <Reference Include="UFSoft.UBF.Util.Data, Version=2.0.0.1, Culture=neutral, PublicKeyToken=aed5b8b71060d80b, processorArchitecture=MSIL">
+      <HintPath>.\..\..\..\..\yonyou\UBFCE\U9.VOB.Product.UBF\UBFStudio\Runtime\\UFSoft.UBF.Util.Data.dll</HintPath>      
+      <SpecificVersion>False</SpecificVersion>
+       <Private>False</Private>
+    </Reference>
+    <Reference Include="UFSoft.UBF.Business, Version=2.0.0.1, Culture=neutral, PublicKeyToken=aed5b8b71060d80b, processorArchitecture=MSIL">
+      <HintPath>.\..\..\..\..\yonyou\UBFCE\U9.VOB.Product.UBF\UBFStudio\Runtime\\UFSoft.UBF.Business.dll</HintPath>
+      <SpecificVersion>False</SpecificVersion>
+       <Private>False</Private>
+   </Reference>
+    <Reference Include="UFSoft.UBF.PL, Version=2.0.0.1, Culture=neutral, PublicKeyToken=aed5b8b71060d80b, processorArchitecture=MSIL">
+      <HintPath>.\..\..\..\..\yonyou\UBFCE\U9.VOB.Product.UBF\UBFStudio\Runtime\\UFSoft.UBF.PL.dll</HintPath>
+      <SpecificVersion>False</SpecificVersion>
+       <Private>False</Private>
+    </Reference>
+    <Reference Include="UFSoft.UBF.View.Query.dll, Version=2.0.0.1, Culture=neutral, PublicKeyToken=aed5b8b71060d80b, processorArchitecture=MSIL">
+      <HintPath>.\..\..\..\..\yonyou\UBFCE\U9.VOB.Product.UBF\UBFStudio\Runtime\\UFSoft.UBF.View.Query.dll</HintPath>
+      <SpecificVersion>False</SpecificVersion>
+      <Private>False</Private>
+    </Reference>
+<Reference Include="UFSoft.UBF.Service, Version=1.0.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>.\..\..\..\..\yonyou\UBFCE\U9.VOB.Product.UBF\UBFStudio\Runtime\\UFSoft.UBF.Service.dll</HintPath>
+       <Private>False</Private>
+    </Reference>
+    <Reference Include="UFSoft.UBF.Execution, Version=2.0.0.1, Culture=neutral, processorArchitecture=MSIL">
+      <HintPath>.\..\..\..\..\yonyou\UBFCE\U9.VOB.Product.UBF\UBFStudio\Runtime\\UFSoft.UBF.Execution.dll</HintPath>
+      <SpecificVersion>False</SpecificVersion>
+       <Private>False</Private>
+    </Reference> 
+    <Reference Include="UFSoft.UBF.AopFrame, Version=2.0.0.1, Culture=neutral, processorArchitecture=MSIL">
+      <HintPath>.\..\..\..\..\yonyou\UBFCE\U9.VOB.Product.UBF\UBFStudio\Runtime\\UFSoft.UBF.AopFrame.dll</HintPath>
+      <SpecificVersion>False</SpecificVersion>
+        <Private>False</Private>
+   </Reference> 
+  <Reference Include="UBFEngineHosting, Version=1.0.0.0, Culture=neutral, PublicKeyToken=aed5b8b71060d80b, processorArchitecture=MSIL">
+    <SpecificVersion>False</SpecificVersion>
+    <HintPath>.\..\..\..\..\yonyou\UBFCE\U9.VOB.Product.UBF\UBFStudio\Runtime\\UBFEngineHosting.dll</HintPath>
+    <Private>False</Private>
+  </Reference>
+
+    <Reference Include="UFIDA.UBF.Query.CommonService.App.dll">
+      <HintPath>.\..\..\..\..\yonyou\UBFCE\U9.VOB.Product.UBF\UBFStudio\Runtime\\UFIDA.UBF.Query.CommonService.App.dll</HintPath>
+      <SpecificVersion>False</SpecificVersion>
+      <Private>False</Private>
+    </Reference>
+
+
+    <Reference Include="UFSoft.UBF.Sys.ResourceBP.Agent">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>.\..\..\..\..\yonyou\UBFCE\U9.VOB.Product.UBF\UBFStudio\Runtime\\UFSoft.UBF.Sys.ResourceBP.Agent.dll</HintPath>
+       <Private>False</Private>
+    </Reference>
+  </ItemGroup>
+
+  <PropertyGroup Condition=" '$(Configuration)' == 'Debug' ">
+    <DocumentationFile>.\bin\Debug\UFIDA.U9.LH.LHPubBP.XML</DocumentationFile>
+  </PropertyGroup>
+
+  <PropertyGroup Condition="">
+    <PostBuildEvent>
+      if exist "$(ProjectDir)\.\..\..\..\..\yonyou\UBFCE\U9.VOB.Product.Component\\Unconfiged\Component\\" goto copyfile
+      Md "$(ProjectDir)\.\..\..\..\..\yonyou\UBFCE\U9.VOB.Product.Component\\Unconfiged\Component\\"
+      :copyfile
+      Copy $(TargetDir)\UFIDA.U9.LH.LHPubBP.Deploy.dll $(ProjectDir)\.\..\..\..\..\yonyou\UBFCE\U9.VOB.Product.Component\\Unconfiged\Component\\
+      Copy $(TargetDir)\UFIDA.U9.LH.LHPubBP.Deploy.pdb $(ProjectDir)\.\..\..\..\..\yonyou\UBFCE\U9.VOB.Product.Component\\Unconfiged\Component\\
+      Copy $(TargetDir)\UFIDA.U9.LH.LHPubBP.dll $(ProjectDir)\.\..\..\..\..\yonyou\UBFCE\U9.VOB.Product.Component\\Unconfiged\Component\\
+      Copy $(TargetDir)\UFIDA.U9.LH.LHPubBP.pdb $(ProjectDir)\.\..\..\..\..\yonyou\UBFCE\U9.VOB.Product.Component\\Unconfiged\Component\\
+      Copy $(TargetDir)\UFIDA.U9.LH.LHPubBP.xml $(ProjectDir)\.\..\..\..\..\yonyou\UBFCE\U9.VOB.Product.Component\\Unconfiged\Component\\
+      Copy $(TargetDir)\UFIDA.U9.LH.LHPubBP.ubfsvc $(ProjectDir)\.\..\..\..\..\yonyou\UBFCE\U9.VOB.Product.Component\\Unconfiged\Component\\
+    </PostBuildEvent>
+   </PropertyGroup>
+</Project>
