@@ -609,7 +609,7 @@
                             }
                             else if (string.IsNullOrEmpty(item.AttachType))
                             {
-                                //通过原始订单号匹配U9出货单，生成来源于出货单的退回处理单
+                                //通过原始订单号匹配U9出货单，生成来源于出货单的退回处理单--2025-1-31
                                 Ship ship = null;
                                 SO so = null;
                                 if (org != null)
